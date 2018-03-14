@@ -5,17 +5,22 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SchoolComponent } from './school/school.component';
 import { routing } from './app.routing';
+import { WorkComponent } from './work/work.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SchoolComponent
+    SchoolComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule,routing
+    RouterModule,routing,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,9 @@
 <p>
   home works!
 </p>
-<form action="">
-  <input type="text" class="form-control" placeholder="Home">
+<form [formGroup]="homeForm" (ngSubmit)="onHomeFormSubmit()">
+  <input type="text" class="form-control" placeholder="Home" formControlName="homeName">
 
+  <br>
+  <button type="submit" class="btn btn-success" (click)="btnNextHomeClick();">Save and Continue</button>
 </form>

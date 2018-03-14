@@ -1,13 +1,11 @@
 <p>
   school works!
 </p>
-<select class="selectpicker">
-  <option>Mustard</option>
-  <option>Ketchup</option>
-  <option>Relish</option>
-</select>
 
-<form action="">
-   <input type="text" class="form-control" placeholder="School">
 
+<form [formGroup]="schoolForm" (ngSubmit)="onSchoolFormSubmit()">
+   <input type="text" class="form-control" placeholder="School" formControlName="schoolName">
+
+   <br>
+   <button type="submit" class="btn btn-success" (click)="btnNextWorkClick();">Save and Continue</button>
 </form>
