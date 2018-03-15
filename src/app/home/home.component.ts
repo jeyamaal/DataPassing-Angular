@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormArray, FormBuilder, Validators,ReactiveFormsModule  } from '@angular/forms';
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-home',
+  selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
@@ -31,8 +31,19 @@ export class HomeComponent implements OnInit {
   
       console.log(this.homeForm);
     }
+  
+     
+    homeFunction(){
 
-  ngOnInit() {
+      console.log("Home Function is Working");
+    }
+
+    functionHome(){
+
+      alert("Hello Its Home");
+    }
+  
+    ngOnInit() {
   }
 
 }

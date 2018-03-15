@@ -7,6 +7,8 @@ import { SchoolComponent } from './school/school.component';
 import { routing } from './app.routing';
 import { WorkComponent } from './work/work.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataserviceService } from './dataservice.service';
+
 
 
 @NgModule({
@@ -14,15 +16,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HomeComponent,
     SchoolComponent,
-    WorkComponent
+    WorkComponent,
+  
   ],
   imports: [
     BrowserModule,
     RouterModule,routing,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+   
   ],
-  providers: [],
+  providers: [DataserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,5 +10,9 @@
 </head>
 <body>
   <app-root></app-root>
+  <home #home></home>
+  <!-- <school [homeRef]="home"></school> -->
+   <school (myevent)="home.homeFunction()"></school>
+
 </body>
 </html>
